@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "GreenIrrigate",
+    "slug": "GreenIrrigate",
+    "scheme": "greenirrigate",
+    "version": "1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID."
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/ios/icon.png",
+      "bundleIdentifier": "com.birdra1n.greenirrigate",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "Precisamos de acesso à rede local para configurar a rede WI-FI dos dispositivos."
+      }
+    },
+    "android": {
+      "icon": "./assets/android/play_store_512.png",
+      "config": {},
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android/res/mipmap-xxxhdpi/ic_launcher.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.birdra1n.greenirrigate"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "349b4ae6-8740-4960-a242-98842fdf7cc9"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/349b4ae6-8740-4960-a242-98842fdf7cc9"
+    }
+  }
+}
